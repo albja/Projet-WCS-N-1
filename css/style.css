@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family:'Roboto', 'Montserrat';}
+    font-family:'Roboto', 'Montserrat','Oswald';}
 
 header {
     height: 70px;
@@ -66,7 +66,7 @@ nav ul {
 {
     display: flex;
     justify-content: center;
-    margin-bottom: 15px ;
+    margin-bottom: 10vw ;
 }
 
 a :link{
@@ -106,8 +106,11 @@ figure
     background: #474787;
     margin-top: 20px;
     margin-bottom:20px;
+    margin-left:5px ;
+    margin-right:5px ;
     padding-top: 10px;
     padding-bottom:10px;
+
 
     
  }
@@ -121,6 +124,52 @@ figure
     padding-right: 5px;
     
  }
+
+ .title-middle
+ {
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+ }
+
+ .container-map
+ {  display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    margin-bottom: 10vw
+    
+ }
+#map
+{
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 50%;
+    min-height: 250px;
+}
+
+ h2
+{
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+.schedule
+{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   font-size: 5vw;
+   margin-top: 10vw;
+   margin-bottom: 10vw;
+   
+    
+}
+
+  
+
+ 
  .warning
  {
     display: inline-flex;
