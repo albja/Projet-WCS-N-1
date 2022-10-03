@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:'Roboto', 'Montserrat';}
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content:space-between;
+    background:#474787;
+}
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    padding:5px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 { 
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 70px;
+    background-color: #d9c259;
+    height: 45vh;
+    overflow: hidden;
+    width: 0;
+}
+nav ul {
+    position: relative;
+    list-style-type: none;
+    padding: 20px;
+    
+}
+
+   .title-desktop{
+    display:none;
+   } 
+
+.title-mobile
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px ;
+}
+
+a :link{
+     color:goldenrod;
+    
+        
+}
+
+a :hover
+{
+    color:red;
+}
+
+
+.calendar
+{
+   display: inline-block;
+   cursor: pointer;    
+   width:50px;
+  
+}  
+.logo
+ {
+   display: flex;
+   justify-content: center;
+   margin-top: 15px;
+   
+   
+
+ } 
+
+
+
+
+figure
+{
+    margin-bottom:15px;
+}
+
+ 
+ .frame
+ {
+    background: #474787;
+ }
+ 
+ .warning
+ {
+    display: inline-flex;
+    padding-top: 10px;
+ }
+
+
+footer
+{
+    background: #474787;
+    
+}
+
+.mymail
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    padding: 5px 5px 10px 10px;
+}
+
+.mymail a:link
+{
+    color: goldenrod;
+}
+.mymail a:hover
+{
+    color:red;
+}
