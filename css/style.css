@@ -86,6 +86,7 @@ a :hover
    display: inline-block;
    cursor: pointer;    
    width:70px;
+   
   
 }  
 .logo
@@ -106,8 +107,6 @@ figure
     background: #474787;
     margin-top: 20px;
     margin-bottom:20px;
-    margin-left:5px ;
-    margin-right:5px ;
     padding-top: 10px;
     padding-bottom:10px;
 
@@ -138,6 +137,7 @@ figure
     margin:auto;
     margin-bottom: 10vw
     
+    
  }
 #map
 {
@@ -145,7 +145,7 @@ figure
     margin-bottom: 10vw;
     padding-left: 5px;
     padding-right: 5px;
-    min-width: 50%;
+    min-width: 80%;
     min-height: 250px;
 }
 
@@ -160,14 +160,25 @@ figure
    display: flex;
    flex-direction: column;
    text-align: center;
-   font-size: 5vw;
+   font-size: 500;
    margin-top: 10vw;
    margin-bottom: 10vw;
+   margin-left: 5px;
+   margin-right: 5px;
+   padding-left: 5px;
+   padding-right: 5px;
+   box-sizing: content-box;
+   border-style:solid;
+   background-color: #fcea75;
    
     
 }
 
-  
+
+.dayofweek:last-child
+{
+    margin-bottom: 15vw;
+}
 
  
  .warning
@@ -188,7 +199,7 @@ footer
     display: flex;
     justify-content: flex-end;
     color:whitesmoke;
-    font-weight: bold;
+    font-size: 400;
     text-shadow: 2px lightgray;
     margin-top: 5px;
     padding: 5px 5px 10px 10px;
