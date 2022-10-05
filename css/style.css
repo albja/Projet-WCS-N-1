@@ -112,7 +112,7 @@ figure {
 }
 
 .frame-text {
-    text-align: justify;
+    text-align: center;
     color: whitesmoke;
     font-weight: bold;
     text-shadow: 2px lightgray;
@@ -174,12 +174,14 @@ h2 {
 }
 
 footer {
+    height: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     background: #474787;
 }
 
 .mymail {
-    display: flex;
-    justify-content: flex-end;
     color: whitesmoke;
     font-weight: bold;
     font-size: 400;
@@ -194,4 +196,34 @@ footer {
 }
 .mymail a:hover {
     color: red;
+}
+
+@media screen and (min-width: 481px) {
+    * {
+        font-size: clamp(1.4rem, 2vw, 3rem);
+    }
+
+    .title-desktop {
+        display: flex;
+        color: white;
+        font-size: auto;
+        font-weight: bold;
+    }
+
+    .title-mobile {
+        display: none;
+    }
+
+    .h2_frame {
+        padding: 5px;
+    }
+
+    h2 {
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+
+    footer {
+        max-height: 110px;
+    }
 }
