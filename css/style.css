@@ -5,6 +5,12 @@
     text-decoration: none;
     font-family: "Roboto", "Montserrat", "Oswald";
 }
+body {
+    background-color: #f7f1ed;
+}
+.title-mobile h1 {
+    text-align: center;
+}
 
 header {
     height: 70px;
@@ -49,8 +55,8 @@ nav {
     position: absolute;
     left: 0;
     top: 70px;
-    background-color: #febeb0;
-    height: 45vh;
+    background-color: #f2bfb4;
+    height: 40vh;
     overflow: hidden;
     width: 0;
 }
@@ -89,7 +95,7 @@ a :hover {
     padding: 5px;
 }
 .calendar g path {
-    fill: white;
+    fill: #f0eff4;
 }
 
 /* .pres-prdocuts {
@@ -120,7 +126,7 @@ figure {
     text-align: center;
     color: whitesmoke;
     font-weight: bold;
-    text-shadow: 2px lightgray;
+    text-shadow: 1px 1px 0px #7a7a7a;
     padding: 5px;
     line-height: 1em;
 }
@@ -139,13 +145,13 @@ figure {
     margin-bottom: 10vw;
     padding: 5px;
 }
-#map {
+iframe {
     margin-top: 10vw;
     margin-bottom: 10vw;
     padding-left: 5px;
     padding-right: 5px;
     min-width: 80%;
-    min-height: 250px;
+    min-height: 450px;
 }
 
 h2 {
@@ -168,7 +174,7 @@ h2 {
     border-style: solid;
     background-color: #febeb0;
     color: #f7f1ed;
-    text-shadow: -1px 2px 3px rgba(69, 63, 63, 0.9);
+    text-shadow: 1px 1px 0px #7a7a7a;
 }
 
 .dayofweek:last-child {
@@ -199,7 +205,7 @@ footer {
 
 .mymail a:link {
     padding-left: 3px;
-    color: goldenrod;
+    color: #fedd89;
 }
 .mymail a:hover {
     color: red;
@@ -221,8 +227,79 @@ footer {
         display: none;
     }
 
+    header {
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        background: #8ca9d3;
+        align-items: center;
+    }
+
+    .container {
+        display: inline-block;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 45px;
+        height: 5px;
+        background-color: #f0eff4;
+        margin: 6px 0;
+        transition: 0.5s;
+    }
+
+    /* Rotate first bar */
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    /* Fade out the second bar */
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    /* Rotate last bar */
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+
+    nav {
+        position: absolute;
+        left: 0;
+        top: 70px;
+        background-color: #f2bfb4;
+        height: 40vh;
+        overflow: hidden;
+        width: 0;
+    }
+    nav ul {
+        position: relative;
+        list-style-type: none;
+        padding: 20px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        width: auto;
+        height: 30vw;
+    }
+
     .h2_frame {
         padding: 5px;
+    }
+
+    iframe {
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+        padding-left: 5px;
+        padding-right: 5px;
+        min-width: 80%;
+        min-height: 650px;
     }
 
     h2 {
