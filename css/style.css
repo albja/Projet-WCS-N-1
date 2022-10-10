@@ -116,7 +116,7 @@ figure {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .frame-text {
@@ -342,14 +342,21 @@ footer {
         padding-left: 5px;
         padding-right: 5px;
         min-width: 80%;
-        min-height: 550px;
+        min-height: 400px;
     }
 
     .frame-text {
-        text-align: justify;
-        vertical-align: middle;
         align-items: center;
     }
+
+    .container-map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+
     .schedule-title {
         padding-top: 10px;
         margin-bottom: 10px;
@@ -357,9 +364,10 @@ footer {
     .schedule {
         display: flex;
         flex-direction: column;
-        max-width: 75%;
+        max-width: 50%;
         margin: 0 auto;
         margin-bottom: 20px;
+        max-height: min-content;
     }
     .schedule-title {
         align-items: center;
@@ -367,7 +375,7 @@ footer {
     }
 
     .daysofweek {
-        margin-bottom: 15px;
+        margin-bottom: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
