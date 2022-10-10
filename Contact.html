@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link href="/css/style.css" rel="stylesheet" type="text/css" />   
-        <link rel="shortcut icon" type="image/png" href="img/UK_flag.png" /> 
-    <script type="text/javascript" src="/script/script.js"></script>
+        <link href="/css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" type="image/png" href="img/UK_flag.png" />
+        <script type="text/javascript" src="/script/script.js"></script>
     </head>
     <body>
         <header>
@@ -136,102 +136,105 @@
                 </ul>
             </nav>
         </header>
-        <figure class="logo"><img src="/img/logo2.png" alt="logo2" ></figure>
+        <figure class="logo"><img src="/img/logo2.png" alt="logo2" /></figure>
         <h1 class="title-mobile">The Queen's Boudoir</h1>
-    <div class="bannière2">
-        <h1>Ecrivez nous !✍🏼</h1>
-    </div>
+        <div class="bannière2">
+            <h1>Ecrivez nous !✍🏼</h1>
+        </div>
 
-    <form method="post" action="traitement.php" class="form">
-        <img src="img/.jpg" alt="" class="" />
+        <form method="post" action="traitement.php" class="form">
+            <img src="img/.jpg" alt="" class="" />
 
-        <label for="pays">Pour combien de personnes ?</label><br />
-        <select name="pays" id="pays">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="entre 11 et 20">entre 11 et 20</option>
-        </select>
-        <br>
-        <br>
-        <label for="nom">Votre nom ?</label>
-        <input
-            type="text"
-            name="nom"
-            id="nom"
-            placeholder="ex: Dupont"
-            size="50"
-            maxlength="18"
-            required="required"
-        />
-        <br />
-        <br />
-        <label for="telephone">Votre numéro de téléphone ?</label>
-        <input
-            type="tel"
-            name="telephone"
-            id="telephone"
-            placeholder="0600000000"
-            size="50"
-            maxlength="18"
-            required="required"
-        />
-        <br />
-        <br />
-        <label for="email">Email</label>
-        <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="john.doe@sncf.fr"
-            size="50"
-            maxlength="18"
-            required="required"
-        />
-        <br />
-        <br />
+            <label for="pays">Pour combien de personnes ?</label><br />
+            <select name="pays" id="pays">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="entre 11 et 20">entre 11 et 20</option>
+            </select>
+            <br />
+            <br />
+            <label for="nom">Votre nom ?</label>
+            <input
+                type="text"
+                name="nom"
+                id="nom"
+                placeholder="ex: Dupont"
+                size="50"
+                maxlength="18"
+                required="required"
+            />
+            <br />
+            <br />
+            <label for="telephone">Votre numéro de téléphone ?</label>
+            <input
+                type="tel"
+                name="telephone"
+                id="telephone"
+                placeholder="0600000000"
+                size="50"
+                maxlength="18"
+                required="required"
+            />
+            <br />
+            <br />
+            <label for="email">Email</label>
+            <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="john.doe@sncf.fr"
+                size="50"
+                maxlength="18"
+                required="required"
+            />
+            <br />
+            <br />
 
-        
-        <br />
-        <br />
-        <label for="note">Avez-vous une remarque , une allérgie à nous communiquer ?</label>
-        <textarea
-            class="message"
-            name="message"
-            id="message"
-            placeholder="ex: Pas content pas content"
-            maxlength="1000"
-            
-        ></textarea>
+            <br />
+            <br />
+            <label for="message"
+                >Avez-vous une remarque , une allérgie à nous communiquer
+                ?</label
+            >
+            <textarea
+                class="message"
+                name="message"
+                id="message"
+                placeholder="ex: Pas content pas content"
+                maxlength="1000"
+            ></textarea>
 
-        <br />
-        <br />
-        <input
-            type="submit"
-            value="Submit"
-            onClick="Message()"
-            class="submit"
-        />
-        <!-- ici le script pour la fenêtre pop un quand utilisateur appuie sur submit-->
-        <script>
-            function Message() {
-                let msg =
-                    "Votre réservation a été prise en compte, nous avons hâte de vous recevoir. ";
-                console.log(msg);
-                alert(msg);
-            }
-        </script>
-    </form>
-    <footer>
-        <div class="mymail">Copyright. Contactez moi  <a href="mailto:alban.jaunet@sncf.fr">  ici </a></div>
-    </footer>
-    </div>
+            <br />
+            <br />
+            <input
+                type="submit"
+                value="Submit"
+                onClick="Message()"
+                class="submit"
+            />
+            <!-- ici le script pour la fenêtre pop un quand utilisateur appuie sur submit-->
+            <script>
+                function Message() {
+                    let msg =
+                        "Votre réservation a été prise en compte, nous avons hâte de vous recevoir. ";
+                    console.log(msg);
+                    alert(msg);
+                }
+            </script>
+        </form>
+        <footer>
+            <div class="mymail">
+                Copyright. Contactez moi
+                <a href="mailto:alban.jaunet@sncf.fr"> ici </a>
+            </div>
+        </footer>
     </body>
-    </html>
+</html>

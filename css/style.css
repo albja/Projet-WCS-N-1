@@ -360,6 +360,8 @@ footer {
     .schedule-title {
         padding-top: 10px;
         margin-bottom: 10px;
+        align-items: center;
+        text-align: center;
     }
     .schedule {
         display: flex;
@@ -368,10 +370,6 @@ footer {
         margin: 0 auto;
         margin-bottom: 20px;
         max-height: min-content;
-    }
-    .schedule-title {
-        align-items: center;
-        text-align: center;
     }
 
     .daysofweek {
@@ -383,5 +381,11 @@ footer {
     }
     footer {
         max-height: 110px;
+    }
+    .mymail {
+        font-size: 0.8em;
+    }
+    footer a {
+        font-size: 0.9em;
     }
 }
