@@ -83,10 +83,6 @@ a :link {
     color: goldenrod;
 }
 
-a :hover {
-    color: red;
-}
-
 .calendar {
     display: inline-block;
     cursor: pointer;
@@ -143,6 +139,10 @@ figure {
     text-align: center;
 }
 
+.container-beer-title {
+    text-align: center;
+    margin-top: 10px;
+}
 .container-beer {
     display: flex;
     flex-direction: column;
@@ -209,9 +209,30 @@ iframe {
     text-align: center;
 }
 
+.warning-title {
+    text-align: center;
+}
+
 .warning {
-    display: inline-flex;
-    padding-top: 10px;
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.warning a:visited {
+    color: red;
+}
+
+.warning a:hover {
+    color: rgb(32, 190, 218);
+}
+
+/* .form {
+} */
+.submit {
+    margin-bottom: 10px;
 }
 
 footer {
