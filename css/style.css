@@ -235,6 +235,24 @@ iframe {
     margin-bottom: 10px;
 }
 
+.team-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.container-team {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-family: "Roboto", "Montserrat", "Oswald";
+    font-size: 1.1em;
+}
+
+.slider {
+    display: none;
+}
+.container-plates {
+    display: none;
+}
 footer {
     height: 70px;
     display: flex;
@@ -346,11 +364,58 @@ footer {
         font-family: "Roboto", "Montserrat", "Oswald";
         font-size: 1.1em;
     }
-    .cards {
+    .container-team {
+        display: none;
+    }
+
+    figcaption {
+        font-size: clamp(1rem, 1.5vw, 2.8rem);
+    }
+
+    .slider {
         display: block;
-        flex-direction: row;
-        width: calc(100% / 3);
-        justify-content: space-between;
+        width: auto;
+        overflow: hidden;
+        margin: 150px auto;
+        height: 100vh;
+    }
+    .slides {
+        width: 300vw;
+        animation: glisse 10s infinite;
+    }
+    .slide {
+        float: left;
+    }
+    .slide img {
+        width: 100vw;
+        height: auto;
+    }
+    .pres {
+        font-size: clamp(1rem, 1.2vw, 2.2rem);
+    }
+
+    @keyframes glisse {
+        0% {
+            transform: translatex(0);
+        }
+        10% {
+            transform: translatex(0);
+        }
+        33% {
+            transform: translatex(-100vw);
+        }
+        43% {
+            transform: translatex(-100vw);
+        }
+        66% {
+            transform: translatex(-200vw);
+        }
+        76% {
+            transform: translatex(-200vw);
+        }
+        100% {
+            transform: translatex(0);
+        }
     }
 
     .h2_frame {
@@ -400,6 +465,7 @@ footer {
         justify-content: center;
         text-align: center;
     }
+
     footer {
         max-height: 110px;
     }
