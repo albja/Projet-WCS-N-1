@@ -129,7 +129,7 @@
             </a>
             <nav>
                 <ul id="menu-main-menu" class="menu-main">
-                    <li><a href="bienvenue.html">Bienvenue</a></li>
+                    <li><a href="index.html">Bienvenue</a></li>
                     <li><a href="nosproduits.html">Nos Produits</a></li>
                     <li><a href="notreequipe.html">Notre Équipe</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -139,13 +139,15 @@
         <figure class="logo"><img src="/img/logo2.png" alt="logo2" /></figure>
         <h1 class="title-mobile">The Queen's Boudoir</h1>
         <div class="bannière2">
-            <h1>Ecrivez nous !✍🏼</h1>
+            <h2 class="contact-title">Ecrivez nous !✍🏼</h2>
         </div>
-
-        <form method="post" action="traitement.php" class="form">
-            <img src="img/.jpg" alt="" class="" />
-
-            <label for="pays">Pour combien de personnes ?</label><br />
+        <form method="post" action="traitement.php" class="center-form">
+            <label for="date">Quand souhaitez vous venir ?</label>
+            <br />
+            <input type="date" data-polyfill="all" />
+            <br />
+            <br />
+            <label for="pays">Combien de personnes ?</label><br />
             <select name="pays" id="pays">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -162,6 +164,7 @@
             <br />
             <br />
             <label for="nom">Votre nom ?</label>
+            <br />
             <input
                 type="text"
                 name="nom"
@@ -174,18 +177,20 @@
             <br />
             <br />
             <label for="telephone">Votre numéro de téléphone ?</label>
+            <br />
             <input
                 type="tel"
                 name="telephone"
                 id="telephone"
-                placeholder="0600000000"
-                size="50"
+                placeholder="06"
+                size="10"
                 maxlength="18"
                 required="required"
             />
             <br />
             <br />
             <label for="email">Email</label>
+            <br />
             <input
                 type="text"
                 name="email"
@@ -195,15 +200,14 @@
                 maxlength="18"
                 required="required"
             />
-            <br />
-            <br />
 
             <br />
             <br />
             <label for="message"
-                >Avez-vous une remarque , une allérgie à nous communiquer
+                >Avez-vous une remarque , une allergie à nous communiquer
                 ?</label
             >
+            <br />
             <textarea
                 class="message"
                 name="message"
@@ -214,12 +218,14 @@
 
             <br />
             <br />
-            <input
-                type="submit"
-                value="Submit"
-                onClick="Message()"
-                class="submit"
-            />
+            <div class="wrap-center">
+                <input
+                    type="submit"
+                    value="Envoyer"
+                    onClick="Message()"
+                    class="myButton"
+                />
+            </div>
             <!-- ici le script pour la fenêtre pop un quand utilisateur appuie sur submit-->
             <script>
                 function Message() {
@@ -230,6 +236,7 @@
                 }
             </script>
         </form>
+
         <footer>
             <div class="mymail">
                 Copyright. Contactez moi

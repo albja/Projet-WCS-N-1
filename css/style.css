@@ -101,6 +101,15 @@ a :link {
     width: auto;
     height: 50vw;
 }
+.contact-title {
+    text-align: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.box {
+    display: none;
+}
 
 figure {
     padding: 5px;
@@ -135,30 +144,40 @@ figure {
     font-family: "Roboto", "Montserrat", "Oswald";
     font-size: 1.1em;
 }
-.container-plates h2 {
+.container-plates h1 {
     text-align: center;
+    padding-bottom: 20px;
 }
 
-.container-beer-title {
+.box-title {
     text-align: center;
-    margin-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
-.container-beer {
+
+.box {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    font-family: "Roboto", "Montserrat", "Oswald";
-    font-size: 1.1em;
-}
-.cards {
+    flex-wrap: wrap;
     margin: auto;
-    width: auto;
+    justify-content: center;
+    max-width: 100vw;
+    list-style-type: none;
+    padding-bottom: 10vw;
 }
 
-.choix {
+.picture img {
+    display: flex;
+    margin: auto;
+    background-size: cover;
+    max-width: 460px;
+    padding: 15px;
+    justify-content: center;
+}
+
+.choice {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .container-map {
@@ -228,11 +247,33 @@ iframe {
 .warning a:hover {
     color: rgb(32, 190, 218);
 }
+form.center-form {
+    width: 70%;
+    margin: 15px;
+}
 
-/* .form {
-} */
-.submit {
-    margin-bottom: 10px;
+.myButton {
+    box-shadow: 3px 4px 0px 0px #8ca9d3;
+    background: linear-gradient(to bottom, #8ca9d3 5%, #487dbd 100%);
+    background-color: #8ca9d3;
+    border-radius: 15px;
+    border: 1px solid #3d64db;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Trebuchet MS;
+    font-size: 17px;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #294eab;
+}
+.myButton:hover {
+    background: linear-gradient(to bottom, #487dbd 5%, #8ca9d3 100%);
+    background-color: #487dbd;
+}
+.myButton:active {
+    position: relative;
+    top: 1px;
 }
 
 .team-title {
@@ -250,9 +291,7 @@ iframe {
 .slider {
     display: none;
 }
-.container-plates {
-    display: none;
-}
+
 footer {
     height: 70px;
     display: flex;
@@ -264,8 +303,7 @@ footer {
 .mymail {
     color: whitesmoke;
     font-weight: bold;
-    font-size: 400;
-    text-shadow: 2px #f0eff4;
+    font-weight: 400;
     margin-top: 5px;
     padding: 5px 5px 10px 10px;
 }
@@ -278,6 +316,8 @@ footer {
     color: red;
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (min-width: 481px) {
     * {
         font-size: clamp(1.4rem, 2vw, 3.5rem);
@@ -286,7 +326,6 @@ footer {
     .title-desktop {
         display: flex;
         color: white;
-        font-size: auto;
         font-weight: bold;
     }
 
@@ -356,20 +395,81 @@ footer {
         height: 30vw;
     }
 
+    .fish-and-chips {
+        display: block;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        width: 70vw;
+        max-width: 80vw;
+        margin: auto;
+    }
+
     .container-beer {
+        display: none;
+    }
+
+    .box {
         display: flex;
-        flex-direction: block;
-        justify-content: space-between;
-        margin-bottom: 15px;
-        font-family: "Roboto", "Montserrat", "Oswald";
-        font-size: 1.1em;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        max-width: 100vw;
+        list-style-type: none;
+    }
+
+    .picture img {
+        display: flex;
+        margin: auto;
+        background-size: cover;
+        max-width: 350px;
+        padding: 15px;
+        justify-content: center;
+    }
+    figure .choice {
+        display: inline-block;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        width: 70vw;
+        max-width: 90vw;
     }
     .container-team {
         display: none;
     }
 
-    figcaption {
-        font-size: clamp(1rem, 1.5vw, 2.8rem);
+    figcaption p {
+        text-align: center;
+        font-size: clamp(1.2rem, 1.5vw, 2.8rem);
+    }
+
+    blockquote {
+        margin: 0;
+        max-width: 100vw;
+    }
+
+    blockquote p {
+        padding: 20px;
+        background: #abc4e7;
+        border-radius: 5px;
+    }
+    form.center-form {
+        width: 80%;
+        margin: auto;
+    }
+    .wrap-center {
+        margin: 0 auto;
+        width: 28%;
+        padding-bottom: 50px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        padding: 0.5rem;
+        border: 2px solid #555;
+        margin: 0;
+        vertical-align: baseline;
+        width: 100%;
     }
 
     .slider {
@@ -381,7 +481,7 @@ footer {
     }
     .slides {
         width: 300vw;
-        animation: glisse 10s infinite;
+        animation: glisse 15s infinite;
     }
     .slide {
         float: left;
@@ -389,9 +489,6 @@ footer {
     .slide img {
         width: 100vw;
         height: auto;
-    }
-    .pres {
-        font-size: clamp(1rem, 1.2vw, 2.2rem);
     }
 
     @keyframes glisse {
