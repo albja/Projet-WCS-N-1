@@ -118,18 +118,17 @@ figure {
 
 .frame {
     background: #8ca9d3;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
 }
 
 .frame-text {
+    vertical-align: middle;
     text-align: center;
     color: whitesmoke;
     font-weight: bold;
+    padding-bottom: 10px;
     text-shadow: 1px 1px 0px #7a7a7a;
-    padding: 5px;
     line-height: 1em;
 }
 
@@ -320,7 +319,7 @@ footer {
 
 @media screen and (min-width: 481px) {
     * {
-        font-size: clamp(1.4rem, 2vw, 3.5rem);
+        font-size: clamp(1.2rem, 2vw, 3.5rem);
     }
 
     .title-desktop {
@@ -522,10 +521,10 @@ footer {
 
     .frame {
         margin-top: 10vw;
-        padding-left: 5px;
-        padding-right: 5px;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 10px;
         min-width: 80%;
-        min-height: 400px;
     }
 
     .frame-text {
