@@ -145,18 +145,21 @@ figure {
 }
 
 .container-plates {
-    font-family: "Roboto", "Montserrat", "Oswald";
-    font-size: 1.1em;
+    font-family: "Roboto", "Montserrat";
+    font-size: 0.8em;
 }
-.container-plates h1 {
+.our-products {
     text-align: center;
     padding-bottom: 20px;
+    text-align: center;
+    font-size: 1.8em;
 }
 
 .box-title {
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
+    font-size: 1.2em;
 }
 
 .box {
@@ -281,7 +284,7 @@ form textarea {
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-family: "Trebuchet MS";
+    font-family: "Roboto", "Montserrat";
     font-size: 17px;
     padding: 7px 25px;
     text-decoration: none;
@@ -304,7 +307,7 @@ form textarea {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
-    font-family: "Roboto", "Montserrat", "Oswald";
+    font-family: "Roboto", "Montserrat";
     font-size: 1.1em;
 }
 
