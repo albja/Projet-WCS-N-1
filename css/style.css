@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "Roboto", "Montserrat", "Oswald";
+    font-family: "Roboto", "Montserrat";
 }
 body {
     background-color: #f7f1ed;
@@ -23,7 +23,7 @@ header {
 .container {
     display: inline-block;
     cursor: pointer;
-    padding: 5px;
+    padding: 20px;
 }
 
 .bar1,
@@ -66,6 +66,11 @@ nav ul {
     padding: 20px;
 }
 
+nav ul li :hover {
+    transition: color 0.5s;
+    color: #f0efef;
+}
+
 .title-desktop {
     display: none;
 }
@@ -86,9 +91,9 @@ a :link {
 .calendar {
     display: inline-block;
     cursor: pointer;
-    width: 45px;
-    height: 49px;
-    padding: 5px;
+    width: 75px;
+    height: 79px;
+    padding: 20px;
 }
 .calendar g path {
     fill: #f0eff4;
@@ -237,10 +242,12 @@ iframe {
     line-height: 1.6em;
     margin-top: 10px;
     margin-bottom: 20px;
+    padding: 20px;
+    text-align: left;
 }
-
-.warning a:visited {
-    color: red;
+.warning a {
+    color: black;
+    text-decoration: underline;
 }
 
 .warning a:hover {
@@ -248,7 +255,21 @@ iframe {
 }
 form.center-form {
     width: 70%;
-    margin: 15px;
+    margin: auto;
+}
+form input,
+form select,
+form textarea {
+    padding: 0.5rem;
+    border: 2px solid #555;
+    margin: 0;
+    vertical-align: baseline;
+    width: 100%;
+}
+.wrap-center {
+    margin: 0 auto;
+    width: 30%;
+    padding-bottom: 50px;
 }
 
 .myButton {
@@ -260,7 +281,7 @@ form.center-form {
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-family: Trebuchet MS;
+    font-family: "Trebuchet MS";
     font-size: 17px;
     padding: 7px 25px;
     text-decoration: none;
@@ -294,7 +315,7 @@ form.center-form {
 footer {
     height: 70px;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
     background: #8ca9d3;
 }
@@ -319,7 +340,8 @@ footer {
 
 @media screen and (min-width: 481px) {
     * {
-        font-size: clamp(1.1rem, 2vw, 3.5rem);
+        font-size: clamp(1rem, 2vw, 3.5rem);
+        transition: 0.5s;
     }
 
     .title-desktop {
@@ -340,10 +362,15 @@ footer {
         align-items: center;
     }
 
-    .container {
+    .calendar {
         display: inline-block;
         cursor: pointer;
-        padding: 5px;
+        width: 85px;
+        height: 79px;
+        padding: 20px;
+    }
+    .calendar g path {
+        fill: #f0eff4;
     }
 
     .bar1,
@@ -384,6 +411,10 @@ footer {
         position: relative;
         list-style-type: none;
         padding: 20px;
+    }
+    nav ul li :hover {
+        transition: color 0.3s;
+        color: #f0efef;
     }
 
     .logo {
@@ -528,7 +559,7 @@ footer {
     }
 
     .frame-text {
-        align-items: center;
+        text-align: center;
     }
 
     .container-map {
@@ -564,6 +595,8 @@ footer {
 
     footer {
         max-height: 110px;
+        display: flex;
+        justify-content: center;
     }
     .mymail {
         font-size: 0.8em;
