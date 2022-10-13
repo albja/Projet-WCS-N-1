@@ -184,6 +184,7 @@
                 placeholder="ex: Dupont"
                 size="50"
                 maxlength="18"
+                pattern="[[A-Za-z_]{1,15}"
                 required="required"
             />
             <br />
@@ -194,7 +195,8 @@
                 type="tel"
                 name="telephone"
                 id="telephone"
-                placeholder="06"
+                placeholder="0601020304"
+                pattern="[0-9]{10}"
                 size="10"
                 maxlength="18"
                 required="required"
@@ -208,6 +210,7 @@
                 name="email"
                 id="email"
                 placeholder="john.doe@pasdemail.fr"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 size="50"
                 maxlength="18"
                 required="required"
@@ -230,6 +233,7 @@
 
             <br />
             <br />
+
             <div class="wrap-center">
                 <input
                     type="submit"
