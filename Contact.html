@@ -153,14 +153,25 @@
         <div class="bannière2">
             <h2 class="contact-title">Ecrivez nous !✍🏼</h2>
         </div>
-        <form method="post" action="traitement.php" class="center-form">
+        <form
+            method="post"
+            id="formular"
+            action="traitement.php"
+            class="center-form"
+        >
             <label for="date">Quand souhaitez vous venir ?</label>
             <br />
-            <input type="date" name="date" id="date" data-polyfill="all" />
+            <input
+                type="date"
+                name="date"
+                id="date"
+                data-polyfill="all"
+                required="required"
+            />
             <br />
             <br />
-            <label for="pays">Combien de personnes ?</label><br />
-            <select name="pays" id="pays">
+            <label for="guest">Combien de personnes ?</label><br />
+            <select name="guest" id="guest">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -181,9 +192,9 @@
                 type="text"
                 name="nom"
                 id="nom"
-                placeholder="ex: Dupont"
+                placeholder="ex: Dupont-Durand"
                 size="50"
-                maxlength="18"
+                maxlength="32"
                 pattern="[[A-Za-z_]{1,15}"
                 required="required"
             />
@@ -198,7 +209,6 @@
                 placeholder="0601020304"
                 pattern="[0-9]{10}"
                 size="10"
-                maxlength="18"
                 required="required"
             />
             <br />
@@ -212,7 +222,6 @@
                 placeholder="john.doe@pasdemail.fr"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 size="50"
-                maxlength="18"
                 required="required"
             />
 
@@ -242,15 +251,6 @@
                     class="myButton"
                 />
             </div>
-            <!-- ici le script pour la fenêtre pop un quand utilisateur appuie sur submit-->
-            <script>
-                function Message() {
-                    let msg =
-                        "Votre réservation a été prise en compte, nous avons hâte de vous recevoir. ";
-                    console.log(msg);
-                    alert(msg);
-                }
-            </script>
         </form>
 
         <footer>

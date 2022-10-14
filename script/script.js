@@ -8,3 +8,13 @@ function openCloseNav(x) {
         nav.style.width = "0";
     }
 }
+
+const message =
+    "Votre réservation a été prise en compte, nous avons hâte de vous recevoir. ";
+
+document
+    .getElementById("formular")
+    .addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert(message);
+    });
