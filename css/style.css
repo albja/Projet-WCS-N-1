@@ -199,7 +199,7 @@ figure {
     margin: auto;
     background-size: cover;
     max-width: 460px;
-    padding: 15px;
+    /* padding: 15px; */
     justify-content: center;
 }
 
@@ -276,7 +276,7 @@ iframe {
 }
 
 .warning a:hover {
-    color: rgb(32, 190, 218);
+    color: rgb(192, 20, 244);
 }
 form.center-form {
     width: 90%;
@@ -478,9 +478,17 @@ footer {
         margin: auto;
         background-size: cover;
         max-width: 350px;
-        padding: 15px;
+
         justify-content: center;
+        padding: 15px;
+        transition: all 0.2s ease-in-out;
     }
+
+    .picture img:hover {
+        transform: scale(1.15);
+        box-sizing: content-box;
+    }
+
     figure .choice {
         display: inline-block;
         align-items: center;
@@ -617,6 +625,11 @@ footer {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+
+    .warning-title:hover {
+        text-align: center;
+        transform: rotateX(720deg);
     }
 
     footer {
