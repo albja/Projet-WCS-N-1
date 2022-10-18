@@ -196,10 +196,9 @@ figure {
 
 .picture img {
     display: flex;
-    margin: auto;
+    margin: 10px;
     background-size: cover;
     max-width: 460px;
-    /* padding: 15px; */
     justify-content: center;
 }
 
@@ -467,20 +466,16 @@ footer {
     .box {
         display: flex;
         flex-wrap: wrap;
-        margin: auto;
         justify-content: center;
         max-width: 100vw;
         list-style-type: none;
+        overflow: hidden;
     }
 
     .picture img {
         display: flex;
-        margin: auto;
-        background-size: cover;
         max-width: 350px;
-
         justify-content: center;
-        padding: 15px;
         transition: all 0.2s ease-in-out;
     }
 
