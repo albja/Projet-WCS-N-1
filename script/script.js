@@ -9,12 +9,10 @@ function openCloseNav(x) {
     }
 }
 
-const message =
-    "Votre réservation a été prise en compte, nous avons hâte de vous recevoir. ";
-
-document
-    .getElementById("formular")
-    .addEventListener("submit", function (event) {
+const form = document.querySelector("form");
+if (form != undefined) {
+    form.addEventListener("submit", function (event) {
         event.preventDefault();
         alert(message);
     });
+}

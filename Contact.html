@@ -154,9 +154,9 @@
             <h2 class="contact-title">Ecrivez nous !✍🏼</h2>
         </div>
         <form
-            method="post"
-            id="formular"
-            action="traitement.php"
+            action="mailto:alban.jaunet@sncf.fr"
+            method="get"
+            enctype="text/plain"
             class="center-form"
         >
             <label for="date">Quand souhaitez vous venir ?</label>
@@ -233,9 +233,9 @@
             >
             <br />
             <textarea
-                class="message"
-                name="message"
-                id="message"
+                class="msg"
+                name="msg"
+                id="msg"
                 placeholder="Je souhaiterai ..."
                 maxlength="1000"
             ></textarea>
@@ -246,8 +246,8 @@
             <div class="wrap-center">
                 <input
                     type="submit"
+                    id="submit"
                     value="Envoyer"
-                    onClick="Message()"
                     class="myButton"
                 />
             </div>

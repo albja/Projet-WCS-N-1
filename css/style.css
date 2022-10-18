@@ -80,8 +80,10 @@ nav ul li :hover {
     justify-content: center;
     margin-bottom: 10vw;
 }
+
 .h2_frame {
     padding: 5px;
+    text-align: center;
 }
 
 a :link {
