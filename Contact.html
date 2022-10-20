@@ -157,9 +157,10 @@
         </div>
         <form
             action="mailto:alban.jaunet@sncf.fr"
-            method="get"
+            method="post"
             enctype="text/plain"
             class="center-form"
+            onsubmit="message"
         >
             <label for="date">Quand souhaitez vous venir ?</label>
             <br />
@@ -238,7 +239,7 @@
                 class="msg"
                 name="msg"
                 id="attention"
-                placeholder="Je souhaiterai ..."
+                placeholder="Je souhaiterais ..."
                 maxlength="1000"
             ></textarea>
 
