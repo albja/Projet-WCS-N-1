@@ -16,3 +16,12 @@ if (form != undefined) {
         alert(message);
     });
 }
+
+setInterval(function () {
+    let logo = document.querySelector(".img_logo");
+
+    logo.animate([{ transform: "rotateY(360deg)" }], {
+        duration: 4500,
+        iterations: 1,
+    });
+}, 8000);
